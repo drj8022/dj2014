@@ -1,0 +1,292 @@
+[
+    {
+        "id": "sound-machine",
+        "title": "The Sound Machine",
+        "tags": [
+            "systems"
+        ],
+        "links": [],
+        "thumb": "sound-machine.jpg",
+        "paragraphs": [
+            "The goal of the Sound Machine is to give people with limited or no musical background the experience of being a performer. The Sound Machine is designed to challenge users to communicate in modes, non-verbally for example, that they may be unfamiliar or uncomfortable with. Screens are omitted in an attempt to push the computer into the background, allowing participants the freedom to focus on their fellow performers.",
+            "I love music, but I am not a musician, so this project really excited me. I have always enjoyed watching the dynamics that occur between performing musicians. I wondered if such communication, informed by those professional individuals knowledge of music, would be possible to replicate using non-musicians. This project also presented itself as a great platform for moving away from screen-based media and into physical interfaces.",
+            "For me, that moment of interest was the litmus test for the project's ultimate success. It was great to see my passion rewarded when a group of friends got together and shared a smile at the experience. It was even more rewarding to see groups of strangers using the machine to form an impromptu community."
+        ],
+        "carousel": [
+            { "image": "sound-machine-01.jpg" },
+            { "image": "sound-machine-02.jpg" },
+            { "image": "sound-machine-03.jpg" },
+            { "image": "sound-machine-04.jpg" },
+            { "image": "sound-machine-05.jpg" },
+            { "image": "sound-machine-06.jpg" },
+            { "iframe": "http://player.vimeo.com/video/5351002?title=0&amp;byline=0&amp;portrait=0" }
+        ]
+    },
+
+    {
+        "id": "knockdown",
+        "title": "Knockdown",
+        "tags": [
+            "dev",
+            "ia",
+            "systems"
+        ],
+        "links": [],
+        "thumb": "knockdown.jpg",
+        "paragraphs": [
+            "Knockdown is a fun project that's based on a simple idea of asking questions to an audience. The idea is to move a conversation forward by getting real time feedback from the people you're presenting to.",
+            "The system has three parts: a \"presenter\" who controls the show, the \"public\" who answer the questions, and a \"screen\" where questions, and multi-media are displayed. The \"presenter\" can create custom sequences of questions and media ahead of time, and display them in any order during the performance.",
+            "The potential use cases for Knockdown could be anything from an educational environment, to business presentations, employee training, or even fun gaming applications like pub trivia!",
+            "This was a great technology project as well. My teammate and I got exposure to new development patterns with Backbone, got our hands dirty with Node and Express, and put together the admin with Angular."
+        ],
+        "carousel": [
+            {"image": "knockdown-06.jpg"},
+            {"image": "knockdown-05.jpg"},
+            {"image": "knockdown-01.gif"},
+            {"image": "knockdown-02.gif"},
+            {"image": "knockdown-03.gif"},
+            {"image": "knockdown-04.gif"}
+        ]
+    },
+
+    {
+        "id": "thisisdk",
+        "title": "ThisisDK",
+        "tags": [
+            "dev"
+        ],
+        "links": [
+            "http://thisisdk.com"
+        ],
+        "thumb": "dk.jpg",
+        "paragraphs": [
+            "Digital Kitchen was interested in changing the conversation around their work, and needed a new site to do it. They were continuing to be seen as purely a production shop, after transitioning into a full service creative agency.",
+            "We solved the problem by updating the messaging around the work. Moving away from a model focused on individual projects, we emphasized longer term client collaborations, and the exciting work that comes from those relationships.",
+            "It was fun to work with such great content and a graceful design. This was my first Drupal 7 site, and I definitely enjoyed using it more than D6! Much of the code is in a custom module, to avoid mixing content and config database updates as much as possible"
+        ],
+        "carousel": [
+            {"image": "dk-01.jpg"},
+            {"image": "dk-02.jpg"},
+            {"image": "dk-03.jpg"},
+            {"image": "dk-04.jpg"},
+            {"image": "dk-05.jpg"},
+            {"image": "dk-06.jpg"},
+            {"image": "dk-07.jpg"}
+        ]
+    },
+
+    {
+        "id": "locast-civic-media",
+        "title": "Locast Civic Media",
+        "tags": [
+            "ia"
+        ],
+        "links": [
+            "http://locast.mit.edu/civic"
+        ],
+        "thumb": "locast.jpg",
+        "paragraphs": [
+            "Locast is a flexible location based platform that combines distributed web and mobile applications to create hyperlocal experiences. The project was developed by a team of 12 at the MIT Mobile Experience Lab in 2009.",
+            "My role on this project was to develop the web based information architecture. We initially put together some basic user profiles, which helped us decide on which experiences to emphasize for the web. I tried experimenting with some different ways to visualize popular content using thickness of line and color.",
+            "We simply didn’t have time to refine (or even include!) all the features we hoped for. But the thoroughness of the wireframes allowed the developers to concentrate on their jobs, instead of filling in incomplete designs."
+        ],
+        "carousel": [
+            { "image": "locast-01.jpg" },
+            { "image": "locast-02.jpg" },
+            { "image": "locast-03.jpg" },
+            { "image": "locast-04.jpg" },
+            { "image": "locast-05.jpg" },
+            { "image": "locast-06.jpg" },
+            { "image": "locast-07.jpg" }
+        ]
+    },
+    
+    {
+        "id": "chestnut-hill-realty",
+        "title": "Chestnut Hill Realty",
+        "tags": [
+            "dev"
+        ],
+        "links": [
+            "http://chr-apartments.com",
+            "http://chestnuthillrealty.com"
+        ],
+        "thumb": "chr.jpg",
+        "paragraphs": [
+            "Chestnut Hill Realty is one of New England’s leading full service real estate companies. CHR needed a better way of displaying their vast array of apartment, corporate, and development rentals and opportunities.",
+            "The Mediumbold team worked closely with CHR to provide information architecture, design, development and support services. As lead front-end developer, it was my role to take assets created by the rest of the team and turn them into a fully functioning site.",
+            "I worked closely with team members and clients to manage expectations and ensure that they received an engaging product they were confident in using."
+        ],
+        "carousel": [
+            { "image": "chr-01.jpg" },
+            { "image": "chr-02.jpg" },
+            { "image": "chr-03.jpg" },
+            { "image": "chr-04.jpg" },
+            { "image": "chr-05.jpg" },
+            { "image": "chr-06.jpg" },
+            { "image": "chr-07.jpg" }
+        ]
+    },
+
+    {
+        "id": "garden-city",
+        "title": "Garden City",
+        "tags": [
+            "systems",
+            "design"
+        ],
+        "links": [],
+        "thumb": "garden-city.jpg",
+        "paragraphs": [
+            "Garden City connects gardeners from around the world. It is designed to be used by urban gardeners at all skill levels. It is a platform to ask questions and provide answers, or simply share information about past experiences.",
+            "I became inspired after reading Michael Pollan’s open letter to the president-elect, encouraging him to grow a garden on the south lawn of the White House. Sure, the president can figure this stuff out, but could everyone? I attempted to answer the novice's inevitable question, “Where do I start?”",
+            "The still shown here attempts to answer that question by visualizing the time and space requirements of a garden. The metaphor of a meal is used to provide a simple to understand starting point.",
+            "Through the research done on this project I came to realize it wasn’t the garden that held my interest. It was questions dealing with how community is formed, and how experiences are shared between community members."
+        ],
+        "carousel": [
+            {"image": "garden-city-01.jpg"},
+            {"image": "garden-city-02.jpg"},
+            {"image": "garden-city-07.jpg"},
+            {"image": "garden-city-08.jpg"},
+            {"image": "garden-city-04.jpg"},
+            {"image": "garden-city-05.jpg"}
+        ]
+    },
+
+    {
+        "id": "js-warrior",
+        "title": "JS Warrior",
+        "tags": [
+            "dev"
+        ],
+        "links": [
+            "http://danjohnston.com/js-warrior",
+            "https://github.com/drj8022/js-warrior"
+        ],
+        "thumb": "js-warrior.gif",
+        "paragraphs": [
+            "A few years ago I decided to really dive into learning JavaScript without using any helper libraries to see what was possible. I thought back to games I would play as a kid, and decided to try and rebuild <a href=\"http://en.wikipedia.org/wiki/Dragon_Warrior\" target=\"_blank\">Dragon Warrior</a> (that NES classic). I remembered it being pretty simple, so it seemed like a good choice.",
+            "It was a great learning experience. Every time I picked up some new trick or design pattern, I wound up rewriting everything from scratch. I also got into writing some little Processing scripts for map building. I would find images of game maps online, and run them through my script to generate the code-based maps I needed.",
+            "Check it out if you're interested, but to warn you most things are unfinished. I've got it loading maps, the character moving around, and some simple menu functionality. If I have more time to throw at this I'd love to add some characters to interact with."
+        ],
+        "carousel": [
+            {"image": "js-warrior-01.gif"}
+        ]
+    },
+
+    {
+        "id": "sustainable-connected-home",
+        "title": "Sustainable Connected Home",
+        "tags": [
+            "design",
+            "ia",
+            "dev"
+        ],
+        "links": [
+            "http://mobile.mit.edu/fbk"
+        ],
+        "thumb": "fbk.jpg",
+        "paragraphs": [
+            "The goal of the Sustainable Connected Home is to conduct advanced research on renewable energy systems, social sustainability, and connected information systems.",
+            "I knew this site would need to perform two functions. It would have to look elegant and deliver information quickly, as it would be shown to individuals with big budgets and small amounts of time. Additionally, a variety of researchers from different disciplines would be contributing new content, each with a different level of comfort with the web.",
+            "I chose to use Wordpress as a CMS for its clean looking administrative pages, and easy to develop themes. The final site allowed ease of use for contributors, while maintaining a sleek look."
+        ],
+        "carousel": [
+            { "image": "fbk-01.jpg" },
+            { "image": "fbk-02.jpg" },
+            { "image": "fbk-03.jpg" },
+            { "image": "fbk-04.jpg" },
+            { "image": "fbk-05.jpg" }
+        ]
+    },
+    
+    {
+        "id": "navia",
+        "title": "Navia Systems",
+        "tags": [
+            "design"
+        ],
+        "links": [],
+        "thumb": "navia.jpg",
+        "paragraphs": [
+            "Several MIT alumni asked me to develop a logotype for their new business. During our initial meeting their product was described to me as: “software that seeks out random patterns in data, random like flipping a coin.”",
+            "I did some research into the word navia, and found it had many historical nautical characteristics. I tried several of these motifs, but I felt none were as successful as successful a brand metaphor as the movement of a coin flip.",
+            "Ultimately both myself and the client were happy with the outcome of this project. The clean lines of the typeface are a nice compliment to the Gestalt coin progression."
+        ],
+        "carousel": [
+            {"image": "navia-01.gif"},
+            {"image": "navia-02.jpg"},
+            {"image": "navia-03.jpg"},
+            {"image": "navia-04.jpg"}
+        ]
+    },
+
+    {
+        "id": "conversation-fountain",
+        "title": "The Conversation Fountain",
+        "tags": [
+            "systems"
+        ],
+        "links": [
+            "http://danjohnston.com/conversation-fountain"
+        ],
+        "thumb": "conversation-fountain.jpg",
+        "paragraphs": [
+            "The Conversation Fountain creates a space where talking to strangers is encouraged. By placing an interactive device within the public space I hope to briefly change passer by into community member.",
+            "This project resulted from the research I had been doing into gardening and gardeners. How could the shared space of the garden be recontextualized? How could I facilitate a conversation between total strangers?",
+            "This was a brief scenario project, thinking about what it would be like if a small group of people from different cities could sit down and have a chat. Would this conversation constitute a community? What knowledge would be exchanged? What would people take away about each other from their experience in this scenario?"
+        ],
+        "carousel": [
+            { "image": "fountain-01.jpg" },
+            { "image": "fountain-00.jpg" },
+            { "image": "fountain-03.jpg" },
+            { "image": "fountain-02.jpg" },
+            { "image": "fountain-04.jpg" },
+            { "image": "fountain-05.jpg" },
+            { "image": "fountain-06.jpg" }
+        ]
+    },
+
+    {
+        "id": "one-year-in-the-city",
+        "title": "One Year In The City",
+        "tags": [
+            "viz"
+        ],
+        "links": [],
+        "thumb": "one-year-city.jpg",
+        "paragraphs": [
+            "Created at The Massachusetts College of Art and Design, this poster maps weather patterns against sports and crime data for the city of Boston during 2007. I doodled the basic design in a few minutes, and then painstakingly translated the data into Illustrator by hand.",
+            "I really enjoyed the challenge of turning these piles of abstract data into something that people could view quickly, and instantly grasp the larger meaning.",
+            "It was interesting to see the spike in crime during the (lost) super bowl, and the dip when the Red Sox won the world series. Was weather the cause? Fans? Maybe just circumstantial? The fun part of this project is that the viewer is challenged to be the judge."
+        ],
+        "carousel": [
+            {"image": "one-year-city-01.jpg"},
+            {"image": "one-year-city-02.jpg"},
+            {"image": "one-year-city-03.jpg"},
+            {"image": "one-year-city-04.jpg"}
+        ]
+    },
+
+    {
+        "id": "green-link",
+        "title": "Green Link",
+        "tags": [
+            "design"
+        ],
+        "links": [],
+        "thumb": "green-link.jpg",
+        "paragraphs": [
+            "Green Link was a partnering of the MIT Mobile Experience Lab and the Italian Trade Commission to explore sustainable best practices. A symposium was planned to showcase green developments in home building.",
+            "I developed the identity shown here as well as some print collateral. Additionally, I created two web sites. The first was a simple piece of brochureware. The second would have been more complex; requiring affordances for users, content creation, and tagging.",
+            "Unfortunately, after the symposium, there simply wasn't much interest in the Green Link, and the project was cancelled. Still, I like the mark. The childlike shape of a house visible in the negative space contrasts nicely with the machined look of the typeface, Centro Pro."
+        ],
+        "carousel": [
+            {"image": "green-link-01.jpg"},
+            {"image": "green-link-02.jpg"},
+            {"image": "green-link-03.jpg"},
+            {"image": "green-link-04.jpg"}
+        ]
+    }
+
+]

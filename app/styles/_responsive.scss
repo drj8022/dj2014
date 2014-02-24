@@ -1,0 +1,240 @@
+// responsive
+
+// Breakpoints
+$desktop: 960;
+$tablet: 768;
+$mWide: 480;
+$mTall: 320;
+
+$mPad: 10;
+
+
+
+// Default Layout: 960px.
+#wrap {
+    width: #{$desktop}px;
+    margin: 0 auto;
+}
+
+#projects .project {
+    width: 225px;
+    height: 159px;
+    margin: 0 10px;
+    padding-bottom: 5px;
+    img {
+        width: 100%;
+    }
+}
+
+#slideshow {
+    width: 640px;
+    height: 480px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+// Tablet Layout: 768px.
+// Inherits styles from: Default Layout.
+@media only screen and (min-width: #{$tablet}px) and (max-width: #{$desktop - 1}px) {
+
+    #wrap {
+        width: #{$tablet}px;
+    }
+
+    #filters {
+        font-size: .8em;
+        background-size: 768px;
+        padding: 2px 5px 8px 5px;
+        .filter {
+            padding: 1px 7px 1px;
+        }
+    }
+
+    #projects .project {
+        width: 242px;
+        height: 170px;
+    }
+
+    #slideshow {
+        width: 480px;
+        height: 360px;
+    }
+
+    #content .copy {
+        width: 260px;
+    }
+
+    .swiper-next,
+    .swiper-prev {
+        top: 150px;
+    }
+
+}
+
+
+
+// Mobile Layout: 320px.
+// Inherits styles from: Default Layout.
+@media only screen and (max-width: #{$tablet - 1}px) {
+
+    #wrap {
+        width: #{$mTall - $mPad * 2}px;
+        padding: 0 #{$mPad}px;
+    }
+
+    #filters {
+        background: $blue;
+        .filter {
+        }
+    }
+
+    #projects .project {
+        width: 300px;
+        height: 205px;
+    }
+
+    #slideshow {
+        float: inherit;
+        margin-right: 0;
+        padding-bottom: 40px;
+        width: 300px;
+        height: 225px;
+    }
+
+    .swiper-next,
+    .swiper-prev {
+        display: none;
+    }
+
+    #header h1 .title {
+        border-left: inherit;
+        padding: inherit;
+        margin-left: inherit;
+        position: inherit;
+        display: block;
+    }
+
+    #content {
+        .copy {
+            float: inherit;
+            width: auto;
+            margin-top: 20px;
+        }
+    
+        &.page {
+            margin: 0 -#{$mPad}px;
+            .copy {
+                position: static;
+                width: inherit;
+                padding: 0 20px;
+            }
+        }
+        &.page.contact {
+            .copy {
+                margin-top: 140px;
+            }
+        }
+    }
+
+    // Menu
+    #menu {
+        right: 0;
+        z-index: 10;
+        width: 22px;
+        height: 17px;
+        cursor: pointer;
+
+        &:before {
+            border-top: 10px double #000;
+            border-bottom: 3px solid #000;
+            content: '';
+            height: 4px;
+            width: 22px;
+            position: absolute;
+        }
+
+        ul {
+            display: none;
+            position: relative;
+            top: 17px;
+            float: right;
+            text-align: right;
+            font-size: 1.5em;
+            li {
+                //display: inherit;
+                background-color: $blue;
+                text-align: left;
+                padding: 0 40px 10px;
+                float: initial;
+                margin: 0;
+                letter-spacing: 0;
+                a.active {
+                    color: $grey;
+                    font-size: 1em;
+                    font-weight: bold;
+                }
+            }
+            li:first-child { padding: 10px 40px 10px; }
+        }
+    }
+
+    // Footer
+    #footer {
+        text-align: center;
+        margin-top: 40px;
+
+        .icons {
+            float: inherit;
+            margin: 20px 0 35px;
+            & > a {
+                height: 24px;
+                width: 24px;
+                background-position: 0 -24px;
+                background-size: 168px 48px;
+                margin-right: 19px;
+
+                &.github            { background-position: -24px -24px; }
+                &.github:hover      { background-position: -24px 0; }
+                &.linkedin          { background-position: -48px -24px; }
+                &.linkedin:hover    { background-position: -48px 0; }
+                &.flickr            { background-position: -72px -24px; }
+                &.flickr:hover      { background-position: -72px 0; }
+                &.soundcloud        { background-position: -96px -24px; }
+                &.soundcloud:hover  { background-position: -96px 0; }
+                &.foursquare        { background-position: -120px -24px; }
+                &.foursquare:hover  { background-position: -120px 0; }
+                &.blog              { background-position: -144px -24px; }
+                &.blog:hover        { background-position: -144px 0; }
+            }
+        }
+        .copy {
+            float: inherit;
+        }
+    }
+}
+
+
+
+// Wide Mobile Layout: 480px.
+// Inherits styles from: Default Layout, Mobile Layout.
+@media only screen and (min-width: #{$mWide}px) and (max-width: #{$tablet - 1}px) {
+
+    #wrap {
+        width: #{$mWide - $mPad * 2}px;
+    }
+
+    #projects .project {
+        width: 220px;
+        height: 156px;
+    }
+
+    #slideshow {
+        width: 460px;
+        height: 345px;
+    }
+
+}

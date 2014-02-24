@@ -1,0 +1,38 @@
+<div id="slideshow" class="swiper-container">
+    <div class="swiper-wrapper">
+    <% _.each(project.carousel, function(slide){ %>
+        <% var type = _.keys(slide).pop(); %>
+        <% var src = _.values(slide).pop(); %>
+        <div class="swiper-slide">
+            <% if (type === 'image') { %>
+            <img src="<%= dj2014.global.BOOK + src %>" width="640" height="480" alt="<%= project.title %>" />
+            <% } %>
+            <% if (type === 'iframe') { %>
+            <iframe src="<%= src %>" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <% } %>
+        </div>
+    <% }); %>
+    </div>
+    <div class="swiper-nav">
+        <% _.each(project.carousel, function(i){ %>
+        <span class="dot"></span>
+        <% }); %>
+    </div>
+    <div class="swiper-next">&#9654;</div>
+    <div class="swiper-prev" style="display:none">&#9664;</div>
+</div>
+
+<div class="copy">
+    <h3><%= project.title %></h3>
+<% if (project.links.length) { %>
+    <p class="links">
+    <% _.each(project.links, function(link){ %>
+        <a href="<%= link %>" target="_blank"><%= link %></a>
+    <% }); %>
+    </p>
+<% } %>
+<% _.each(project.paragraphs, function(paragraph){ %>
+    <p><%= paragraph %></p>
+<% }); %>
+    <h5><a href="#">&laquo; Back To All Projects</a></h5>
+</div>

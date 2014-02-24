@@ -1,0 +1,21 @@
+<div id="filters">
+    <button class="filter active" data-filter="*">Show All</button>
+    <button class="filter" data-filter=".ia">Information Architecture</button>
+    <button class="filter" data-filter=".systems">Systems Design</button>
+    <button class="filter" data-filter=".dev">Web Development</button>
+    <button class="filter" data-filter=".design">Visual Design</button>
+    <button class="filter" data-filter=".viz">Data Visualization</button>
+</div>
+
+<div id="projects">
+<% _.each(projects, function(project){ %>
+    <% var tags = 'project'; %>
+    <% _.each(project.tags, function(tag){
+        tags += ' ' + tag;
+    }); %>
+    <a href="#project/<%= project.id %>" class="<%= tags %>">
+        <h4><%= project.title %></h4>
+        <img src="<%= dj2014.global.THUMBS + project.thumb %>" alt="<%= project.title %>" />
+    </a>
+<% }); %>
+</div>
