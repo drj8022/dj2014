@@ -15,13 +15,18 @@ dj2014.Views = dj2014.Views || {};
 
         events: {
             'click .swiper-next': 'swiperNext',
-            'click .swiper-prev': 'swiperPrev'
+            'click .swiper-prev': 'swiperPrev',
+            'click .back-to-all': 'backToAll'
         },
 
         render: function() {
             this.$el.html(this.template({project: this.options.project}));
             this.$next = this.$el.find('.swiper-next');
             this.$prev = this.$el.find('.swiper-prev');
+
+            // Make sure we're at the top
+            $('html,body').scrollTop(0);
+
             return this;
         },
 
@@ -74,6 +79,11 @@ dj2014.Views = dj2014.Views || {};
                 this.$next.hide();
                 this.$prev.hide();
             }
+        },
+
+        backToAll: function() {
+            // Hide current content, so it seems like something happened on slow devices
+            this.$el.hide();
         }
 
     });
