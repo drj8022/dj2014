@@ -17,12 +17,7 @@ dj2014.Views = dj2014.Views || {};
             'click #filters .filter': 'filterIsotope',
         },
 
-//        initialize: function() {
-//            console.log('ProjectAllView initialize');
-//        },
-
         render: function() {
-            console.log(this.options.projects);
             this.$el.html(this.template({projects: this.options.projects}));
             return this;
         },

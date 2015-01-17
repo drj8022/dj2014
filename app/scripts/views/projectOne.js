@@ -18,12 +18,7 @@ dj2014.Views = dj2014.Views || {};
             'click .swiper-prev': 'swiperPrev'
         },
 
-//        initialize: function() {
-//            console.log('ProjectOneView initialize');
-//        },
-
         render: function() {
-            console.log(this.options.project);
             this.$el.html(this.template({project: this.options.project}));
             this.$next = this.$el.find('.swiper-next');
             this.$prev = this.$el.find('.swiper-prev');
@@ -31,7 +26,6 @@ dj2014.Views = dj2014.Views || {};
         },
 
         doSwiper: function() {
-            console.log('doSwiper');
             // Fire carousel if there are enough things.
             if (this.options.project.carousel.length > 1) {
                 var self = this;
