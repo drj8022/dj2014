@@ -16,7 +16,7 @@ dj2014.Views = dj2014.Views || {};
         events: {
             'click .swiper-next': 'swiperNext',
             'click .swiper-prev': 'swiperPrev',
-            // 'click .back-to-all': 'backToAll'
+            'click .back-to-all': 'backToAll'
         },
 
         render: function() {
@@ -81,12 +81,10 @@ dj2014.Views = dj2014.Views || {};
             }
         },
 
-        // backToAll: function() {
-        //     // Hide current content, so it seems like something happened on slow devices
-        //     this.$el.hide();
-        //     $('body').addClass('loading');
-        //     // var $loader = $('#loader').addClass('in');
-        // }
+        backToAll: function() {
+            // Hide current content, so it seems like something happened on slow devices
+            this.$el.hide();
+        }
 
     });
 
