@@ -9,6 +9,7 @@ dj2014.Routers = dj2014.Routers || {};
 
         initialize: function(options) {
             this.layout = options.layout;
+            this.$body = $('body');
         },
 
         routes: {
@@ -21,6 +22,9 @@ dj2014.Routers = dj2014.Routers || {};
         index: function() {
             this.layout.header.clearActive();
 
+            // Show loader
+            this.startLoad();
+
             // Grab all the projects, and draw them.
             var self = this,
                 projectCollection = new dj2014.Collections.ProjectCollection();
@@ -30,6 +34,9 @@ dj2014.Routers = dj2014.Routers || {};
                     self.layout.renderChild(projectAllView);
                     projectAllView.layoutIsotope();
 
+                    // Hide loader
+                    self.endLoad();
+
                     // Listen for resize and re-trigger Isotope
                     // smartresize() is bundled with Isotope
                     $(window).smartresize(function(){
@@ -37,6 +44,7 @@ dj2014.Routers = dj2014.Routers || {};
                     });
                 },
                 error: function() {
+                    self.endLoad();
                     console.log('error fetching projects');
                 }
             });
@@ -78,8 +86,15 @@ dj2014.Routers = dj2014.Routers || {};
             // Flatpage
             var contactView = new dj2014.Views.ContactView();
             this.layout.renderChild(contactView);
-        }
+        },
 
+        startLoad: function() {
+            this.$body.addClass('loading');
+        },
+
+        endLoad: function() {
+            this.$body.removeClass('loading');
+        }
     });
 
 })();

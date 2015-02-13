@@ -1,0 +1,128 @@
+// Loader
+
+
+#loader {
+  position: fixed;
+  z-index: -1;
+  top: 78px;
+  left: 50%;
+  margin-left: -64px;
+  width: 128px;
+  height: 128px;
+  -moz-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  transition-duration: 400ms;
+  opacity: 0;
+}
+
+body.loading #loader {
+  opacity: 1;
+}
+body.loading #footer {
+  margin-top: 80px;
+}
+
+
+.dot {
+  position: absolute;
+  background-color: white;
+  height: 23px;
+  width: 23px;
+  -moz-border-radius: 12px;
+  -moz-animation-name: loadimation;
+  -moz-animation-duration: 0.88s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: linear;
+  -webkit-border-radius: 12px;
+  -webkit-animation-name: loadimation;
+  -webkit-animation-duration: 0.88s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: linear;
+  border-radius: 12px;
+  animation-name: loadimation;
+  animation-duration: 0.88s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+
+#dot1 {
+  left: 0;
+  top: 52px;
+  -moz-animation-delay: 0.33s;
+  -webkit-animation-delay: 0.33s;
+  animation-delay: 0.33s;
+}
+
+#dot2 {
+  left: 15px;
+  top: 15px;
+  -moz-animation-delay: 0.44s;
+  -webkit-animation-delay: 0.44s;
+  animation-delay: 0.44s;
+}
+
+#dot3 {
+  left: 52px;
+  top: 0;
+  -moz-animation-delay: 0.55s;
+  -webkit-animation-delay: 0.55s;
+  animation-delay: 0.55s;
+}
+
+#dot4 {
+  right: 15px;
+  top: 15px;
+  -moz-animation-delay: 0.66s;
+  -webkit-animation-delay: 0.66s;
+  animation-delay: 0.66s;
+}
+
+#dot5 {
+  right: 0;
+  top: 52px;
+  -moz-animation-delay: 0.77s;
+  -webkit-animation-delay: 0.77s;
+  animation-delay: 0.77s;
+}
+
+#dot6 {
+  right: 15px;
+  bottom: 15px;
+  -moz-animation-delay: 0.88s;
+  -webkit-animation-delay: 0.88s;
+  animation-delay: 0.88s;
+}
+
+#dot7 {
+  left: 52px;
+  bottom: 0;
+  -moz-animation-delay: 0.99s;
+  -webkit-animation-delay: 0.99s;
+  animation-delay: 0.99s;
+}
+
+#dot8 {
+  left: 15px;
+  bottom: 15px;
+  -moz-animation-delay: 1.1s;
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+@-moz-keyframes loadimation{
+  0%   { background-color:#A4DDED; }
+  100% { background-color:#FFFFFF; }
+}
+@-webkit-keyframes loadimation{
+  0%   { background-color:#A4DDED }
+  100% { background-color:#FFFFFF; }
+}
+@keyframes   {
+  0%   { background-color:#A4DDED; }
+  100% { background-color:#FFFFFF; }
+}
