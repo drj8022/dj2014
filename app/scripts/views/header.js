@@ -29,9 +29,11 @@ dj2014.Views = dj2014.Views || {};
 
         menuClick: function( e ) {
             var $target = $(e.target),
-                menuClick;
+                menuClick = false;
 
-            $target.is('#menu') ? menuClick = true : menuClick = false;
+            if ($target.is('#menu')) {
+                menuClick = true;
+            }
 
             // Desktop
             if (window.innerWidth > 768) {

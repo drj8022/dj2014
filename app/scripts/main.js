@@ -1,4 +1,4 @@
-/*global dj2014, $, Backbone*/
+/*global dj2014, $, _, Backbone*/
 
 window.dj2014 = {
     Models: {},
@@ -22,7 +22,7 @@ window.dj2014 = {
         // TODO: Maybe do a cool loading thing here, but dogg the file is like 20k.
         var projectCollection = new dj2014.Collections.ProjectCollection();
         projectCollection.fetch({
-            success: function(collection, response) {
+            success: function(collection) {
                 dj2014.Events.trigger('data:loaded', collection);
             },
             error: function() {
