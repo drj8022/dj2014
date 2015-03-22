@@ -14,47 +14,44 @@ dj2014.Views = dj2014.Views || {};
         template: JST['app/scripts/templates/header.ejs'],
 
         events: {
-            'click h1 a': 'clearActive',
-            'click #menu a': 'updateActive',
+            'click #menu': 'menuClick'
         },
-
-//        initialize: function() {
-//            console.log('HeaderView initialize');
-//        },
 
         render: function() {
             this.$el.html(this.template());
-            this.doResponsiveMenu();
+            this.$menu = this.$('ul');
+            this.$items = this.$('a');
         },
 
-        doResponsiveMenu: function() {
-            var $menu  = $('#menu'),
-                $menUl = $('ul', $menu);
+        resetItems: function() {
+            this.$items.removeClass('active');
+        },
 
-            // smartresize() is bundled with Isotope
-            $(window).smartresize(function(){
-                // If the screen is at least tablet size, and the menu is hidden
-                if (window.outerWidth > 767 && $menUl.is(':hidden')) {
-                    $menUl.show();
+        menuClick: function( e ) {
+            var $target = $(e.target),
+                menuClick;
+
+            $target.is('#menu') ? menuClick = true : menuClick = false;
+
+            // Desktop
+            if (window.innerWidth > 768) {
+                if (menuClick) {
+                    // Do nothing
                 }
-            });
-
-            $menu.on('click', function(){
-                // TODO: add a class for CSS animation
-                // Edge case odd behavior going from mobile to tablet sizes.
-                if (window.outerWidth <= 767) {
-                    $menUl.slideToggle('fast');
+                else {
+                    this.resetItems();
+                    $target.addClass('active');
                 }
-            });
-        },
-
-        clearActive: function() {
-            $('#menu a').removeClass();
-        },
-
-        updateActive: function( e ) {
-            this.clearActive();
-            $(e.target).addClass('active');
+            }
+            // Mobile
+            else {
+                if (menuClick) {
+                    this.$menu.slideToggle('fast');
+                }
+                else {
+                    this.$menu.slideUp('fast');
+                }
+            }
         }
 
     });

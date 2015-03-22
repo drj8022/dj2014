@@ -1,28 +1,41 @@
 /*global dj2014, $, Backbone*/
 
-
 window.dj2014 = {
     Models: {},
     Collections: {},
     Views: {},
     Routers: {},
+    Events: {},
     init: function () {
         'use strict';
 
         // Globals
-        this.global = {};
-        this.global.SERVER = 'http://localhost:9000/';
-        this.global.IMGDIR = 'images/';
-        this.global.THUMBS = this.global.IMGDIR + 'thumbs/';
-        this.global.BOOK   = this.global.IMGDIR + 'book/';
+        this.global = {
+            THUMBS: 'images/thumbs/',
+            BOOK: 'images/book/'
+        };
 
-        // App init
-        var layout = new dj2014.Views.LayoutView();
-        new dj2014.Routers.Dj2014Router({layout: layout});
-        Backbone.history.start();
+        // dj2014 events
+        _.extend(dj2014.Events, Backbone.Events);
 
-        // Open outbound links in new tab
-        $('a[href^="http://"]').attr('target', '_blank');
+        // Load data
+        // TODO: Maybe do a cool loading thing here, but dogg the file is like 20k.
+        var projectCollection = new dj2014.Collections.ProjectCollection();
+        projectCollection.fetch({
+            success: function(collection, response) {
+                dj2014.Events.trigger('data:loaded', collection);
+            },
+            error: function() {
+                // Boned
+            }
+        });
+
+        // Kickoff
+        dj2014.Events.on('data:loaded', function(data) {
+            var layout = new dj2014.Views.LayoutView();
+            new dj2014.Routers.Dj2014Router({layout: layout, data: data});
+            Backbone.history.start();
+        });
     }
 };
 

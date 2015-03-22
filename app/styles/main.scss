@@ -69,10 +69,11 @@ a {
             letter-spacing: 1px;
             &:first-child { margin-left: 0; }
             a.active {
-                font-size: 1.5em;
-                color: $blue;
-                position: relative;
-                top: -6px;
+                font-weight: 700;
+                border: 2px solid black;
+                font-size: 14px;
+                padding: 1px 7px;
+                &:hover { color: black; }
             }
         }
     }
@@ -95,10 +96,6 @@ a {
         p {
             font-size: .75em;
             line-height: 1.75em;
-            //font-size: .8em;
-            //line-height: 1.641em;
-            //font-size: .9em;
-            //line-height: 1.598em;
             a {
                 color: darken($blue, 40%);
                 font-style: italic;

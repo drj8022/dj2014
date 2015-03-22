@@ -10,12 +10,12 @@
 <div id="projects">
 <% _.each(projects, function(project){ %>
     <% var tags = 'project'; %>
-    <% _.each(project.tags, function(tag){
+    <% _.each(project.attributes.tags, function(tag){
         tags += ' ' + tag;
     }); %>
     <a href="#project/<%= project.id %>" class="<%= tags %>">
-        <h4><%= project.title %></h4>
-        <img src="<%= dj2014.global.THUMBS + project.thumb %>" alt="<%= project.title %>" />
+        <h4><%= project.attributes.title %></h4>
+        <img src="<%= dj2014.global.THUMBS + project.attributes.thumb %>" alt="<%= project.attributes.title %>" />
     </a>
 <% }); %>
 </div>
