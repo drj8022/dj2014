@@ -68,10 +68,12 @@ a {
             float: left;
             letter-spacing: 1px;
             &:first-child { margin-left: 0; }
+            a {
+                font-size: 1.1em;
+            }
             a.active {
                 font-weight: 700;
                 border: 2px solid black;
-                font-size: 14px;
                 padding: 1px 7px;
                 &:hover { color: black; }
             }
@@ -139,17 +141,20 @@ a {
 
 
 #filters {
-    padding: 5px 5px 10px 5px;
-    //background-color: $blue;
-    background: url('../images/stroke.jpg') center center;
-    font-size: .9em;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: url('../images/stroke.jpg') center center no-repeat;
+    font-size: .8em;
 
     .filter {
-        margin: 5px 0 0 5px;
-        padding: 2px 10px 3px;
+        margin: 0 0 0 5px;
+        padding: 2px 8px;
+        color: #666;
         background: transparent;
         border: 1px solid lighten($grey, 25%);
-        border-radius: 13px;
+        border-radius: 6px;
+        transition: background-color 400ms ease, color 400ms ease;
+        outline: 0;
         &.active {
             color: $blue;
             background: $grey;

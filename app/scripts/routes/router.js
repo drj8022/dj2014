@@ -53,12 +53,18 @@ dj2014.Routers = dj2014.Routers || {};
         },
 
         about: function() {
+            // Reset nav
+            this.layout.header.resetItems();
+
             // About page
             var aboutView = new dj2014.Views.AboutView();
             this.layout.renderChild(aboutView);
         },
 
         contact: function() {
+            // Reset nav
+            this.layout.header.resetItems();
+
             // Contact page
             var contactView = new dj2014.Views.ContactView();
             this.layout.renderChild(contactView);

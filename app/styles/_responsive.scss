@@ -46,12 +46,7 @@ $mPad: 10;
     }
 
     #filters {
-        font-size: .8em;
         background-size: 768px;
-        padding: 2px 5px 8px 5px;
-        .filter {
-            padding: 1px 7px 1px;
-        }
     }
 
     #projects .project {
@@ -88,7 +83,9 @@ $mPad: 10;
 
     #filters {
         background: $blue;
+        padding-bottom: 5px;
         .filter {
+            margin-bottom: 5px;
         }
     }
 
@@ -135,7 +132,7 @@ $mPad: 10;
         }
         &.page.contact {
             .copy {
-                margin-top: 140px;
+                margin-top: 20px;
             }
         }
     }
